@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="turquoise2">#00E5EE</color>
+    <color name="turquoise3">#00C5CD</color>
+    <color name="cyan1">#00FFFF</color>
+    <color name="cyan2">#00EEEE</color>
+    <color name="glory">#919191</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textDark">#222</color>
+    <color name="textLight">#555</color>
+    <color name="lightGlory">#919191</color>
+    <color name="moreLightGlory">#EEEEEE</color>
+</resources>
