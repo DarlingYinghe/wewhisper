@@ -39,7 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:tabIndicatorHeight="0dp"
         app:tabSelectedTextColor="@color/turquoise2"
-        app:tabTextColor="@color/glory">
+        app:tabTextColor="@color/glory"
+        android:background="@color/white">
 
         <android.support.design.widget.TabItem
             android:layout_width="match_parent"

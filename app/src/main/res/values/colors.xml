@@ -14,4 +14,6 @@
     <color name="textLight">#555</color>
     <color name="lightGlory">#919191</color>
     <color name="moreLightGlory">#EEEEEE</color>
+    <color name="searchBg">#00adb5</color>
+    <color name="edit">#015c60</color>
 </resources>
