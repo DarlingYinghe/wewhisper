@@ -5,6 +5,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.view.menu.MenuBuilder;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.ContextMenu;
@@ -21,6 +22,8 @@ import android.widget.PopupMenu;
 import com.tiancheng.wewhisper.R;
 import com.tiancheng.wewhisper.community.adapter.CommunityAdapter;
 
+import java.lang.reflect.Method;
+
 import static com.tiancheng.wewhisper.community.data.source.CommunityDataManager.getCommunityDatas;
 
 
@@ -30,8 +33,7 @@ import static com.tiancheng.wewhisper.community.data.source.CommunityDataManager
 public class CommunityFragment extends Fragment {
 
     private RecyclerView rv;
-    private ImageView icMenu;
-    private boolean menuIsShow;
+    /*private ImageView icMenu;*/
 
     public CommunityFragment() {
         // Required empty public constructor
@@ -45,7 +47,7 @@ public class CommunityFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_community, container, false);
         initView(view);
         setRecyclerView();
-        setMenu();
+        /*setMenu();*/
         return view;
     }
 
@@ -54,11 +56,12 @@ public class CommunityFragment extends Fragment {
         rv.setAdapter(new CommunityAdapter(getActivity(), getCommunityDatas()));
     }
 
-    private void setMenu() {
+   /* private void setMenu() {
 
         final PopupMenu popupMenu = new PopupMenu(getActivity(), icMenu);
         MenuInflater menuInflater = popupMenu.getMenuInflater();
-        menuInflater.inflate(R.menu.menu_community, popupMenu.getMenu());
+        Menu menu = popupMenu.getMenu();
+        menuInflater.inflate(R.menu.menu_community, menu);
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -71,11 +74,14 @@ public class CommunityFragment extends Fragment {
                        popupMenu.show();
                }
            });
-    }
+    }*/
 
     private void initView(View view) {
         rv = (RecyclerView)view.findViewById(R.id.rv_community);
-        icMenu = (ImageView)view.findViewById(R.id.iv_menu_community);
+        /*icMenu = (ImageView)view.findViewById(R.id.iv_menu_community);*/
     }
+
+
+
 
 }

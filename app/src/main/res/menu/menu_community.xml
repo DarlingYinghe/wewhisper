@@ -3,20 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_publish_new"
+        android:id="@+id/menu_publish_circle"
         android:orderInCategory="100"
-        android:title="新增发表"
-        app:showAsAction="never" />
+        android:title="@string/circleManager"
+        app:showAsAction="never"
+        android:icon="@drawable/circle" />
+
+    <item
+        android:id="@+id/menu_publish_new"
+        android:orderInCategory="300"
+        android:title="@string/publish"
+        app:showAsAction="never"
+        android:icon="@drawable/publish"/>
 
     <item
         android:id="@+id/menu_publish_history"
-        android:orderInCategory="200"
-        android:title="发表历史"
-        app:showAsAction="never" />
+        android:orderInCategory="300"
+        android:title="@string/publishHistory"
+        app:showAsAction="never"
+        android:icon="@drawable/history"/>
 
     <item
         android:id="@+id/menu_collection"
-        android:orderInCategory="300"
-        android:title="收藏"
-        app:showAsAction="never" />
+        android:orderInCategory="400"
+        android:title="@string/collection"
+        app:showAsAction="never"
+        android:icon="@drawable/collection"/>
+
 </menu>

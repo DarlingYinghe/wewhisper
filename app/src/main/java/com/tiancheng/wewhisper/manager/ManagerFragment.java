@@ -1,6 +1,7 @@
 package com.tiancheng.wewhisper.manager;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import com.tiancheng.wewhisper.R;
 import com.tiancheng.wewhisper.manager.adapter.IconBarAdapter;
 import com.tiancheng.wewhisper.manager.adapter.IconListAdapter;
+import com.tiancheng.wewhisper.scheme.SchemeActivity;
 
 import static com.tiancheng.wewhisper.manager.data.source.ManagerDataManager.getManagerIconBarDatas;
 import static com.tiancheng.wewhisper.manager.data.source.ManagerDataManager.getManagerIconListDatas;
@@ -62,7 +64,25 @@ public class ManagerFragment extends Fragment {
 
     private void setIconBar() {
         iconBar.setLayoutManager(new GridLayoutManager(getActivity(), 4));
-        iconBar.setAdapter(new IconBarAdapter(getActivity(), getManagerIconBarDatas()));
+        IconBarAdapter iconBarAdapter = new IconBarAdapter(getActivity(), getManagerIconBarDatas());
+        iconBarAdapter.setOnItemClickListener(new IconBarAdapter.OnItemClickListener() {
+            @Override
+            public void onClick(int position) {
+                switch (position) {
+                    case 1:
+                        startActivity(new Intent(getActivity(), SchemeActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            @Override
+            public void onLongClick(int position) {
+
+            }
+        });
+        iconBar.setAdapter(iconBarAdapter);
     }
 
     private void setIconList2() {

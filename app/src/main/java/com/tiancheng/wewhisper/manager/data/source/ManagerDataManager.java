@@ -18,7 +18,7 @@ public class ManagerDataManager {
 
         List<IconData> dataList = new ArrayList<IconData>();
         Integer[] icons = new Integer[]{
-                R.drawable.history,
+                R.drawable.treat_history,
                 R.drawable.scheme,
                 R.drawable.course,
                 R.drawable.activity

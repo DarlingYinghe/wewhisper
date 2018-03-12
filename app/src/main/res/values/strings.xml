@@ -17,5 +17,13 @@
     <string name="test">测试</string>
     <string name="manager">我的</string>
     <string name="search">搜索</string>
+    <string name="circleManager">圈子</string>
+    <string name="publish">发表</string>
+    <string name="publishHistory">发表历史</string>
+    <string name="collection">收藏</string>
+    <string name="menu_tested">测试历史</string>
+    <string name="menu_test_collection">收藏</string>
+    <string name="consult_area">咨询专区</string>
+    <string name="scheme">治疗方案</string>
 
 </resources>
