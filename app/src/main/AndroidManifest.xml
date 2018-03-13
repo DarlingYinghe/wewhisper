@@ -41,9 +41,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
 
@@ -109,7 +109,11 @@
         </activity>
         <activity android:name=".scheme.SchemeActivity" />
         <activity android:name=".scheme.VrVideoActivity" />
+<<<<<<< HEAD
         <activity android:name=".consult.ConsultMain"></activity>
+=======
+        <activity android:name=".circle.CircleActivity"></activity>
+>>>>>>> 51b26705b4dbdb1b7c6b487a742b75b2e43a9e86
     </application>
 
 </manifest>

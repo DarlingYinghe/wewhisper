@@ -1,6 +1,12 @@
 package com.tiancheng.wewhisper.main;
 
+<<<<<<< HEAD
 import android.content.Context;
+=======
+
+import android.annotation.SuppressLint;
+import android.content.Intent;
+>>>>>>> 51b26705b4dbdb1b7c6b487a742b75b2e43a9e86
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.TabLayout;
@@ -32,10 +38,14 @@ import com.netease.nimlib.sdk.auth.AuthService;
 import com.netease.nimlib.sdk.auth.LoginInfo;
 import com.netease.nimlib.sdk.util.NIMUtil;
 import com.tiancheng.wewhisper.R;
+<<<<<<< HEAD
 import com.tiancheng.wewhisper.consult.nim.DemoCache;
 
 import java.io.IOException;
 import java.util.prefs.Preferences;
+=======
+import com.tiancheng.wewhisper.circle.CircleActivity;
+>>>>>>> 51b26705b4dbdb1b7c6b487a742b75b2e43a9e86
 
 public class MainActivity extends AppCompatActivity {
 
@@ -135,6 +145,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 return false;
+            }
+        });
+        communityPopupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_circle:
+                        startActivity(new Intent(MainActivity.this, CircleActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+                return true;
             }
         });
     }
