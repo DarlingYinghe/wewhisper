@@ -2,6 +2,7 @@ package com.tiancheng.wewhisper.main;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.tiancheng.wewhisper.R;
+import com.tiancheng.wewhisper.circle.CircleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,6 +75,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 return false;
+            }
+        });
+        communityPopupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_circle:
+                        startActivity(new Intent(MainActivity.this, CircleActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+                return true;
             }
         });
     }
