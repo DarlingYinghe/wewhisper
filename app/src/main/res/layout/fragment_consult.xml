@@ -26,22 +26,12 @@
         app:layout_constraintLeft_toLeftOf="@id/consult_title_bg"
         app:layout_constraintRight_toRightOf="@id/consult_title_bg" />-->
 
-    <LinearLayout
+    <fragment
+        android:id="@+id/recent_contacts_fragment"
+        android:name="com.netease.nim.uikit.business.recent.RecentContactsFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="72dp">
-        <include
-            layout="@layout/item_consult" />
-        <include
-            layout="@layout/item_consult" />
-        <include
-            layout="@layout/item_consult" />
-        <include
-            layout="@layout/item_consult" />
-
-    </LinearLayout>
+        android:layout_height="match_parent">
+    </fragment>
 
 
 </android.support.constraint.ConstraintLayout>

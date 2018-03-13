@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\ChenJY\\Desktop\\fastwork\\wewhisper\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\ChenJY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\e18ca3df6c4ea0a07f96ca2751e1ecc8\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChenJY\\Desktop\\fastwork\\wewhisper\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\ChenJY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\e18ca3df6c4ea0a07f96ca2751e1ecc8\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChenJY\\Desktop\\fastwork\\wewhisper\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\ChenJY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\e18ca3df6c4ea0a07f96ca2751e1ecc8\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChenJY\\Desktop\\fastwork\\wewhisper\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\ChenJY\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\e18ca3df6c4ea0a07f96ca2751e1ecc8\\res\\layout-v21\\notification_action.xml"
+    }
+]

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WeWhisper.iml" filepath="$PROJECT_DIR$/WeWhisper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uikit/uikit.iml" filepath="$PROJECT_DIR$/uikit/uikit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wewhisper.iml" filepath="$PROJECT_DIR$/wewhisper.iml" />
     </modules>
   </component>
 </project>
